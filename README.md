@@ -19,9 +19,9 @@ Tags all follow the same formate like this:
 Most HTML tags work just like this:
 
 
--[]Opening tag, which states what kind of tag we’re using;
--[]The text we want the tag to be applied to;
--[]Closing tag, which makes sure the tag is limited to a certain piece of text.
+[X]Opening tag, which states what kind of tag we’re using;
+[Y]The text we want the tag to be applied to;
+[Z]Closing tag, which makes sure the tag is limited to a certain piece of text.
 
 ## Basic HTML Document Structure.
 
@@ -41,12 +41,12 @@ Most HTML tags work just like this:
 </html>
 ```
 
-##Some useful resources
+## Some useful resources
 https://www.htmldog.com/references/html/tags/
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 # Getting Started V.2 
 In this topic we cover the <img> tag and the tags attributes. 
 
-##Some useful resources for images
+## Some useful resources for images
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
