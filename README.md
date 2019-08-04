@@ -45,8 +45,7 @@ Most HTML tags work just like this:
 https://www.htmldog.com/references/html/tags/
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
-# Getting Started V.2 
-In this topic we cover the <img> tag and the tags attributes. 
+In this topic we cover the _img_ tag and the tags attributes. 
 
 ## Some useful resources for images
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
