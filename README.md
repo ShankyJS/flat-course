@@ -141,7 +141,7 @@ If you want to customize some texts you can also use the "id" selector to just c
 
 CSS gives us variety of ways to select different elements and style with them.  
 
-*1) Select by Type:* 
+#### 1) Select by Type
 This selects an specific element selected with his element name.
 
 ```
@@ -150,7 +150,7 @@ p {
 }
 ```
 
-*2) Select by Class* 
+#### 2) Select by Class
 This selects an element matching class attribute name. This selector indicated by the preceeding . dot (period)
 
 ```
@@ -177,7 +177,7 @@ You can also apply more than one class to the same element. For example, let's a
 
 ```
 
-*3) Select by ID* 
+#### 3) Select by ID
 
 This selects an element with matching id attribute name. This selector is indicated by the preceeding hashtag symbol.
 
@@ -192,7 +192,7 @@ This selects an element with matching id attribute name. This selector is indica
 
 A single Id name should only be applied to one element per page. 
 
-*4) Compound*
+#### 4) Compound
 
 This selects all matched elements in the compound set. This selector is indicated by a "," separating the selectos of the set. Each element within the comma separated list will be styled the same.
 
@@ -208,7 +208,7 @@ h1, h2, #box {
 }
 ```
 
-*5) Descendent*
+#### 5) Descendent
 
 This selects an element that is nested inside of a specific parent element. This selector is indicated by a "space" keyboard between the parent and the child to be selected. 
 
@@ -224,7 +224,7 @@ This selects an element that is nested inside of a specific parent element. This
 }
 ```
 
-*6) Child*
+#### 6) Child
 
 This selects an element that is nested only one level deep inside of the specified parent element. It only selects direct children and not grandchildren. This selector is indicated by a > (greater than) symbol between the parent and the child to be selected.
 
@@ -245,7 +245,7 @@ This selects an element that is nested only one level deep inside of the specifi
 }
 ```
 
-*7) Adjacent Sibling*
+#### 7) Adjacent Sibling
 
 This selects an element that appears directly after the former element assuming they are both siblings (in the same level of nesting, in the same parent). 
 This selector is indicated by a + symbol between the former sibling and the selected element that follows.
@@ -266,7 +266,7 @@ h3 + p {
 }
 ```
 
-*General Sibling* 
+#### 8) General Sibling 
 
 This selects all elements that appear directly after the former element. This selector is indicated by a ~ tilde symbol between the former sibling and the selected element that follows it.
 
@@ -286,7 +286,7 @@ h2 ~ p {
 }
 ```
 
-*Universal*
+#### 9) Universal
 
 This selects elements where the properties specified have not been styled by any other selectors. This selector is indicated by an * asterik symbol. 
 
@@ -299,7 +299,7 @@ This selects elements where the properties specified have not been styled by any
 <h5> I was selected because I haven't specified a color style for h5 anywhere else yet on our CSS so they will get the color orange now being covered under the universal selector. 
 ```
 
-*Attribute* 
+#### 10) Attribute  
 
 This selects an element with a matching attribute value. This selector is indicated by square brackets : [], followed by the attribute property and value of the selected element within the brackets. 
 
@@ -313,7 +313,7 @@ img[alt="Cat"] {
 }
 ```
 
-*Other Attribute Selectors Include*
+**Other Attribute Selectors Include**
 
 ```
 a[href^="http"] The ^= caret symbol and equals sign select elements that start with the matching value, such as <a href="http://google.com">google</a>.
@@ -326,4 +326,33 @@ p[class~="monkey"] The ~= tilde symbol and equals sign select elements that cont
 
 p[class|="birds"] The |= pipe symbol selects elements that contain the term within a dash separated value, such as <p class="new-birds-today">...</p>.
 
-``
+```
+
+#### 11) Pseudo Class
+
+This selects an element based on the unique relationship or state described in the selector. This selector is indicated by the : (colon symbol), followed by the pseudo class that describes the element's state or positioning amongst other elements.
+
+```
+<a href="about.html">About</a>
+```
+```
+a:link {
+  text-decoration: none;
+}
+```
+```
+Other Pseudo Class Selectors Include:
+a:link selects links in their default state before the visitor has interacted with them.
+
+a:visited selects links after the user has already clicked on them and is visiting that page again.
+
+a:hover selects links when the user is hovering their mouse over the link.
+
+a:active selects links for only the moment when the mouse button is pressed when clicking on the link.
+
+p:first-child selects elements that are the first child when appearing inside a common parent. Such as <div><p>I'm selected</p><p>I'm not</p><p>Neither am I</p></div>
+
+p:last-child selects elements that are the last child when appearing inside a common parent. Such as <div><p>I'm not selected</p><p>Neither am I</p><p>I'm selected</p></div>
+
+These are just a few pseudo selectors, but there are many additional ones you can explore in the resource links provided at the bottom of this lesson.
+```
