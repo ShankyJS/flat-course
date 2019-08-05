@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+
+p {
+    font-weight: bold;
+}
+
+#first {
+    font-size: 15pt;
+}
+
+.container{
+    background-color: honeydew;
+    padding: 0%;
+    border: 1px solid grey;
+    height: 100%;
+    width: 100%;
+}
