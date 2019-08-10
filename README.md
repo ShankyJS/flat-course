@@ -356,3 +356,35 @@ p:last-child selects elements that are the last child when appearing inside a co
 
 These are just a few pseudo selectors, but there are many additional ones you can explore in the resource links provided at the bottom of this lesson.
 ```
+
+# JS And the Web
+
+## This is Alice Example.
+
+If you click on Alice, you'll notice that Alice has some behavior. If you click on her she starts spinning and she doesn't stop unless clicked again. It's not very nice to make a kitten spin based on the whims of someone's mouse click.
+
+## Discovering JavaScript's Powers 
+
+In previous lessons, you've seen that HTML structures the content of a webpage. Now JavaScript is a language that adds behavior to a website. What do we mean by that? 
+When we say JS adds behavior to our HTML we mean that it selects HTML, listens to events such as mouse clicks, and adds, modifies or removes HTML.
+In this case, the behavior that JavaScript added was it listened to the click event, and then modified the HTML of alice, If you look at the JS tab, you can see that the code is almost readable.
+
+
+script.js
+```
+function toggleClass(){
+  if(image.className == 'image'){
+      image.className = ''
+  } else {
+      image.className = 'image'
+  }
+}
+```
+
+
+This code do: 
+-Find HTML.
+-Allows you to find specific pieces of HTML so we can later change that HTML. Above we found the image of the cat.
+-Listen and respond to events.
+-JavaScript can listen to events like clicking or hovering over specific elements, the user pressing on specific keys, and much more.
+-JavaScript can remove or add HTML like our last code, it removes CSS class image if we don't click the picture.
