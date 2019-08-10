@@ -381,10 +381,74 @@ function toggleClass(){
 }
 ```
 
+index.html
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Click me</h1>
+        <img id="kitten" class="" src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" width="150" height="150">
+        <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
+
+```
+
+main.css
+```
+#kitten{
+  border-radius: 50%;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 120px;
+  margin:-60px 0 0 -60px;
+}
+
+.container > h1 {
+  color: gray;
+  text-align: center;
+}
+.image {
+-webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+```
 
 This code do: 
--Find HTML.
--Allows you to find specific pieces of HTML so we can later change that HTML. Above we found the image of the cat.
--Listen and respond to events.
--JavaScript can listen to events like clicking or hovering over specific elements, the user pressing on specific keys, and much more.
--JavaScript can remove or add HTML like our last code, it removes CSS class image if we don't click the picture.
+[]Find HTML.
+[]-Allows you to find specific pieces of HTML so we can later change that HTML. Above we found the image of the cat.
+[]Listen and respond to events.
+[]JavaScript can listen to events like clicking or hovering over specific elements, the user pressing on specific keys, and much more.
+
+
+# Introduction to the DOM
+
+## Problem Statement.
+
+We know how to write HTML and style it with CSS but if we want to do more with the content in our pages, such as adding or deleting elements or modifying them. 
+It's time to move on to interactivity and understanding the **Document Object Model** or DOM
+
+### The document Object Model
+
+Just as your DNA represents a code based version of you, the DOM represents a code-based version of a web page. Because of this, when you change the DOM, you change what's displayed in the browser. Adding elements, removing, changing, etc. Thanks to the DOM and the way it creates a representative model of documents elements, we can use a language such as JavaScript to work with those elements and add to them, delete them or modify them. 
+
+To see the DOM in action, let's take a look at the HTML that constructs every website we visit. 
+
