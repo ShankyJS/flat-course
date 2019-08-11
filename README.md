@@ -452,3 +452,19 @@ Just as your DNA represents a code based version of you, the DOM represents a co
 
 To see the DOM in action, let's take a look at the HTML that constructs every website we visit. 
 
+#### Some useful resources
+
+https://css-tricks.com/dom/
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+#### Conclusion
+
+HTML is a markup language used to display content in a browser. When we change the appearance of a web page, what we are really changing is the Document Object Model, wich directly determines the appearance displayed in th browser.
+
+We can view and manipulate the Document Object Model by opening our developer tools, but when we do so the HTML is not changed.
+
+We can also view our Document Object Model by opening the console and typing the word "document"
+
+We can select a specific piece of the DOM by using JS, such as Document.querySelector('header'), and we can also use JavaScript to alter our DOM with .remove().
+
