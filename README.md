@@ -575,3 +575,6 @@ In this section, we learned how to use JavaScript and our developer console to a
 <p class='util--hide'>View <a href='https://learn.co/lessons/selecting-single-elements-readme'>Selecting Single Elements Readme</a> on Learn.co and start learning to code for free.</p>
 
 [static-lovelace-file]: https://learn-co-curriculum.github.io/selecting-single-elements-readme/lovelace.html
+
+#Selecting Single Elements Lab 
+
